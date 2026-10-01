@@ -6,7 +6,7 @@
 
 [sub_resource type="DrawableTexture2D" id="DrawableTexture2D_c5hxj"]
 
-[node name="Game" type="Node2D" unique_id=1839728243]
+[node name="Map" type="Node2D" unique_id=1839728243]
 modulate = Color(0.73721796, 0.9762575, 0.081926756, 1)
 position = Vector2(-3, -1)
 
@@ -16,9 +16,8 @@ position = Vector2(582, 318)
 scale = Vector2(1.5, 1.5)
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=208151567]
-modulate = Color(0.73721796, 0.9762575, 0.081926756, 1)
-position = Vector2(289.99994, 262)
-scale = Vector2(7.867189, 5.859374)
+position = Vector2(302, 287)
+scale = Vector2(9.239258, 6.7851563)
 texture = SubResource("DrawableTexture2D_c5hxj")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1745579103]
