@@ -25,7 +25,7 @@ func load_game () -> Dictionary:
 			var data: Dictionary = json.get_data()
 			save_file.close()
 			return data
-		push_error("CORRUPTED SAVE")
+		push_error("CORRUPTED SAVE FILE")
 	return default_dictionary
 
 func reset_save () -> void:

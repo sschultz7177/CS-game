@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://d2b4qeneh8wjw"]
 
 [ext_resource type="Script" uid="uid://mnxv4xyw16do" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="Texture2D" uid="uid://dh23x48umr1qa" path="res://enemy base.png.png" id="2_mae5d"]
+[ext_resource type="Texture2D" uid="uid://dph4cspr0e85j" path="res://player base.png.png" id="3_4hy44"]
 
 [node name="Menu" type="Control" unique_id=1020218002]
 layout_mode = 3
@@ -38,6 +40,14 @@ text = "Settings"
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1053856029]
 layout_mode = 2
 text = "Quit"
+
+[node name="EnemyBase_png" type="Sprite2D" parent="." unique_id=993005300]
+position = Vector2(139, 485)
+texture = ExtResource("2_mae5d")
+
+[node name="PlayerBase_png" type="Sprite2D" parent="." unique_id=693283831]
+position = Vector2(1018, 486)
+texture = ExtResource("3_4hy44")
 
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
 [connection signal="pressed" from="MarginContainer/VBoxContainer/Equip" to="." method="_on_equip_pressed"]

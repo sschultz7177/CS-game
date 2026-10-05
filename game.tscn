@@ -3,11 +3,26 @@
 [ext_resource type="Script" uid="uid://du76rrqnfyxmm" path="res://button.gd" id="3_feb5d"]
 
 [node name="Map" type="Node2D" unique_id=1839728243]
-position = Vector2(-3, -1)
+modulate = Color(0.73721796, 0.9762575, 0.081926756, 1)
+rotation = -0.00017804986
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=912239511]
 position = Vector2(582, 318)
 scale = Vector2(1.5, 1.5)
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=208151567]
+modulate = Color(0.73721796, 0.9762575, 0.081926756, 1)
+position = Vector2(623, 343.00003)
+scale = Vector2(22.195314, 12.125)
+texture = SubResource("DrawableTexture2D_c5hxj")
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1745579103]
+motion_mode = 1
+script = ExtResource("1_80nbo")
+
+[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1523038618]
+position = Vector2(770, 259)
+texture = ExtResource("2_e2o6t")
 
 [node name="Button" type="Button" parent="." unique_id=1992360128]
 offset_left = 10.0
