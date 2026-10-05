@@ -15,36 +15,127 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lti8b")
 
-[node name="MarginContainer" type="MarginContainer" parent="." unique_id=1862816332]
-layout_mode = 0
-offset_right = 40.0
-offset_bottom = 40.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hy44"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(640, 0, 320, 320)
 
-[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1879852942]
-layout_mode = 2
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytr4m"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(960, 0, 320, 320)
 
-[node name="Start" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1684772190]
-layout_mode = 2
-text = "Start"
+[sub_resource type="AtlasTexture" id="AtlasTexture_l48gv"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(0, 320, 320, 320)
 
-[node name="Equip" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1845100775]
-layout_mode = 2
-text = "Equip"
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecwwl"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(320, 320, 320, 320)
 
-[node name="Upgrades" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1136186836]
-layout_mode = 2
-text = "Upgrades"
+[sub_resource type="AtlasTexture" id="AtlasTexture_kk3ma"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(640, 320, 320, 320)
 
-[node name="Settings" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1395753797]
-layout_mode = 2
-text = "Settings"
+[sub_resource type="SpriteFrames" id="SpriteFrames_lk74j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mae5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hy44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytr4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l48gv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecwwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kk3ma")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
 
-[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer" unique_id=1053856029]
-layout_mode = 2
-text = "Quit"
+[sub_resource type="AtlasTexture" id="AtlasTexture_nrnbx"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(960, 320, 320, 320)
 
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Start" to="." method="_on_start_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Equip" to="." method="_on_equip_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Upgrades" to="." method="_on_upgrades_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Settings" to="." method="_on_settings_pressed"]
-[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]
+[sub_resource type="AtlasTexture" id="AtlasTexture_iqepy"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(0, 640, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_h1wq0"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(320, 640, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dwrpx"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(640, 640, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_g7jxm"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(960, 640, 320, 320)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jspdm"]
+atlas = ExtResource("2_ouk20")
+region = Rect2(0, 960, 320, 320)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_r3rgl"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_nrnbx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_iqepy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_h1wq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dwrpx")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_g7jxm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jspdm")
+}],
+"loop": 1,
+"name": &"default",
+"speed": 5.0
+}]
+
+[node name="Node2D" type="Node2D" unique_id=1464206413]
+script = ExtResource("1_lti8b")
+
+[node name="Button" type="Button" parent="." unique_id=1501349961]
+offset_left = 306.0
+offset_top = 139.0
+offset_right = 813.0
+offset_bottom = 269.0
+
+[node name="Label" type="Label" parent="." unique_id=7831789]
+offset_left = 307.0
+offset_top = 141.0
+offset_right = 810.0
+offset_bottom = 273.0
+
+[node name="SwordRun" type="AnimatedSprite2D" parent="." unique_id=459774157]
+position = Vector2(150, 498.5)
+scale = Vector2(0.8, 0.821875)
+sprite_frames = SubResource("SpriteFrames_lk74j")
+
+[node name="SwordAttack" type="AnimatedSprite2D" parent="." unique_id=1602526865]
+position = Vector2(971, 503)
+scale = Vector2(0.90625, 0.88125)
+sprite_frames = SubResource("SpriteFrames_r3rgl")
+
+[node name="SwordIdle" type="Sprite2D" parent="." unique_id=1009197479]
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]

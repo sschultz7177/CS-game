@@ -2,12 +2,13 @@
 
 [ext_resource type="Script" uid="uid://du76rrqnfyxmm" path="res://Map/button.gd" id="1_c7s6e"]
 
-[node name="Map" type="Node2D" unique_id=1839728243]
-position = Vector2(-3, -1)
+[sub_resource type="AtlasTexture" id="AtlasTexture_fc0e3"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(960, 320, 320, 320)
 
-[node name="Camera2D" type="Camera2D" parent="." unique_id=912239511]
-position = Vector2(582, 318)
-scale = Vector2(1.5, 1.5)
+[sub_resource type="AtlasTexture" id="AtlasTexture_7jktm"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(0, 640, 320, 320)
 
 [node name="Button" type="Button" parent="." unique_id=1992360128]
 offset_left = 10.0
@@ -17,72 +18,131 @@ offset_bottom = 68.0
 text = "Home"
 script = ExtResource("1_c7s6e")
 
-[node name="Button2" type="Button" parent="." unique_id=577279373]
-offset_left = 101.0
-offset_top = 512.0
-offset_right = 176.0
-offset_bottom = 573.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_eow3j"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(640, 640, 320, 320)
 
-[node name="Button3" type="Button" parent="." unique_id=1678106487]
-offset_left = 609.0
-offset_top = 403.0
-offset_right = 684.0
-offset_bottom = 464.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5wjh"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(960, 640, 320, 320)
 
-[node name="Button4" type="Button" parent="." unique_id=1390357942]
-offset_left = 364.0
-offset_top = 422.0
-offset_right = 439.0
-offset_bottom = 483.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_vef74"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(0, 960, 320, 320)
 
-[node name="Button5" type="Button" parent="." unique_id=1413212255]
-offset_left = 559.0
-offset_top = 81.0
-offset_right = 634.0
-offset_bottom = 142.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_hve3p"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(0, 0, 320, 320)
 
-[node name="Button6" type="Button" parent="." unique_id=1560881630]
-offset_left = 143.0
-offset_top = 186.0
-offset_right = 218.0
-offset_bottom = 247.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_mae5d"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(320, 0, 320, 320)
 
-[node name="Button7" type="Button" parent="." unique_id=1962003991]
-offset_left = 636.0
-offset_top = 518.0
-offset_right = 711.0
-offset_bottom = 579.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_4hy44"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(640, 0, 320, 320)
 
-[node name="Button8" type="Button" parent="." unique_id=1642590517]
-offset_left = 500.0
-offset_top = 275.0
-offset_right = 575.0
-offset_bottom = 336.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_ytr4m"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(960, 0, 320, 320)
 
-[node name="Button9" type="Button" parent="." unique_id=1988397762]
-offset_left = 302.0
-offset_top = 249.0
-offset_right = 377.0
-offset_bottom = 310.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_l48gv"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(0, 320, 320, 320)
 
-[node name="Button10" type="Button" parent="." unique_id=1883101029]
-offset_left = 396.0
-offset_top = 534.0
-offset_right = 471.0
-offset_bottom = 595.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_ecwwl"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(320, 320, 320, 320)
 
-[node name="Button11" type="Button" parent="." unique_id=787079691]
-offset_left = 332.0
-offset_top = 110.0
-offset_right = 407.0
-offset_bottom = 171.0
+[sub_resource type="AtlasTexture" id="AtlasTexture_kk3ma"]
+atlas = ExtResource("2_e2o6t")
+region = Rect2(640, 320, 320, 320)
 
-[node name="Button12" type="Button" parent="." unique_id=1401103160]
-offset_left = 138.0
-offset_top = 352.0
-offset_right = 213.0
-offset_bottom = 413.0
+[sub_resource type="SpriteFrames" id="SpriteFrames_lk74j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fc0e3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7jktm")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ryrav")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_eow3j")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5wjh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vef74")
+}],
+"loop": 1,
+"name": &"Attack",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hve3p")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mae5d")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4hy44")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ytr4m")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_l48gv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ecwwl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kk3ma")
+}],
+"loop": 1,
+"name": &"Run",
+"speed": 10.0
+}]
 
-[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]
-[connection signal="pressed" from="Button2" to="Button" method="_on_button_2_pressed"]
-[connection signal="pressed" from="Button3" to="Button" method="_on_button_3_pressed"]
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lk74j"]
+
+[node name="Node2D" type="Node2D" unique_id=1464206413]
+script = ExtResource("1_80nbo")
+
+[node name="Button" type="Button" parent="." unique_id=1501349961]
+offset_left = 306.0
+offset_top = 139.0
+offset_right = 813.0
+offset_bottom = 269.0
+
+[node name="Label" type="Label" parent="." unique_id=7831789]
+offset_left = 307.0
+offset_top = 141.0
+offset_right = 810.0
+offset_bottom = 273.0
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1466528964]
+motion_mode = 1
+
+[node name="Sword" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=459774157]
+position = Vector2(651, 486)
+scale = Vector2(0.8, 0.821875)
+sprite_frames = SubResource("SpriteFrames_lk74j")
+animation = &"Run"
+script = ExtResource("3_feb5d")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=1473824765]
+shape = SubResource("RectangleShape2D_lk74j")
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
