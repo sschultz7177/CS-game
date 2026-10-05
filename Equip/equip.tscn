@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://b5s4t7jgnjql6"]
+
+[ext_resource type="Script" uid="uid://cl1f21oyhgosk" path="res://Equip/Equip.gd" id="1_kovq6"]
+
+[node name="Equip" type="Node2D" unique_id=1716240745]
+
+[node name="Home" type="Button" parent="." unique_id=437133617]
+offset_left = 29.0
+offset_top = 12.0
+offset_right = 117.0
+offset_bottom = 56.0
+text = "Home"
+script = ExtResource("1_kovq6")
+
+[connection signal="pressed" from="Home" to="Home" method="_on_pressed"]

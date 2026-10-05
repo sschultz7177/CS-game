@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://fd87hdyhrkeo"]
 
-[ext_resource type="Script" uid="uid://dbhwdly6g2m55" path="res://testt.gd" id="1_8uh7m"]
+[ext_resource type="Script" uid="uid://dbhwdly6g2m55" path="res://Save game test/testt.gd" id="1_8uh7m"]
 
-[node name="Node2D" type="Node2D" unique_id=1464206413]
+[node name="Save game test" type="Node2D" unique_id=1464206413]
 script = ExtResource("1_8uh7m")
 
 [node name="Button" type="Button" parent="." unique_id=1501349961]

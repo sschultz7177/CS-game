@@ -1,12 +1,16 @@
 [gd_scene format=3 uid="uid://d2b4qeneh8wjw"]
 
-[ext_resource type="Script" uid="uid://mnxv4xyw16do" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="Script" uid="uid://mnxv4xyw16do" path="res://Main menu/menu.gd" id="1_lti8b"]
 
-[node name="Menu" type="Control" unique_id=1020218002]
+[node name="Main Menu" type="Control" unique_id=1020218002]
 layout_mode = 3
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_left = 1.0
+offset_top = -2.0
+offset_right = 1.0
+offset_bottom = -2.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_lti8b")

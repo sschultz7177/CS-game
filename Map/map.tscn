@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://dhh78k34kbkmc"]
 
-[ext_resource type="Script" uid="uid://du76rrqnfyxmm" path="res://button.gd" id="3_feb5d"]
+[ext_resource type="Script" uid="uid://du76rrqnfyxmm" path="res://Map/button.gd" id="1_c7s6e"]
 
 [node name="Map" type="Node2D" unique_id=1839728243]
 position = Vector2(-3, -1)
@@ -15,7 +15,7 @@ offset_top = 1.0
 offset_right = 147.0
 offset_bottom = 68.0
 text = "Home"
-script = ExtResource("3_feb5d")
+script = ExtResource("1_c7s6e")
 
 [node name="Button2" type="Button" parent="." unique_id=577279373]
 offset_left = 101.0
